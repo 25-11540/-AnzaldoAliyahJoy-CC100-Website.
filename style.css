@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 70px;
+}
+
+header {
+  background: #ffffff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #7b4eff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  background-color: #7b4eff;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.nav-links a:hover {
+  background-color: #5a38cc;
+  color: #fff;
+}
+
+.hero {
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+}
+
+.hero-text h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.hero-text h3 span {
+  color: #7b4eff;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
+  line-height: 1.4;
+}
+
+.hero-text p {
+  max-width: 400px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.hero-img img {
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+section {
+  padding: 6rem 3rem;
+  min-height: 100vh;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;   
+  gap: 20px;             
+  font-size: 18px;
+  margin-top: 0.7rem;
+  
+}
+
+.contact-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;        
+}
+
+.contact-pic {
+  display: flex;
+  align-items: center;   
+  gap: 20px;             
+  font-size: 18px;
+  margin-top: 0.7rem;
+}
+
+.contact-pic img {
+  width: 43px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+.hero-text,
+.hero-img {
+  transform: translateY(-20px);
+}
+
+#about h1,
+#about p {
+  margin-top: -60px;
+}
+
+.skills-container p {
+  margin: 6px 6px; 
+}
+
+#contact .contact-card {
+  margin-top: -70px; 
+}
+
+#about p {
+  font-size: 17px;    
+  line-height: 1.7;    
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#portfolio {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.portfolio-card {
+  background: #fff;
+  width: 80%;
+  max-width: 900px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center; 
+}
+
+.portfolio-card h1 {
+  font-size: 40px;  
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  text-align: left;
+  margin-top: 25px;
+}
+
+.portfolio-content p {
+  font-size: 17px;  
+}
+
+.portfolio-content h4,
+.portfolio-content h5,
+.portfolio-content h6 {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+.Education {
+    font-size: 25px;
+}
+
+.Skills {
+    font-size: 25px;
+}
+
+@media (max-width: 600px) {
+  .portfolio-content {
+    grid-template-columns: 1fr; 
+  }
+}
+
+.portfolio-content p,
+.portfolio-content h2,
+.portfolio-content h3,
+.portfolio-content h4,
+.portfolio-content h5,
+.portfolio-content h6 {
+  line-height: 25px;
+}
